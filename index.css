@@ -1,3 +1,5 @@
+/* =-=-=-=-=-=-=-=-= Global =-=-=-=-=-=-=-=-= */
+
 :root {
     --bg: #0E1218;
     --text: #F1F1F1;
@@ -52,6 +54,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* =-=-=-=-=-=-=-=-= Card =-=-=-=-=-=-=-=-= */
 
 .left {
     display: flex;
@@ -173,4 +177,32 @@ img {
 .left .footer i {
     width: 2.8rem;
     height: 3.4rem;
+}
+
+/* =-=-=-=-=-=-=-=-= Card customization =-=-=-=-=-=-=-=-= */
+
+.right {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right > h4 {
+    margin-bottom: 3.2rem;
+}
+
+.right .right__button {
+    color: var(--buttons);
+
+    background-color: black;
+    border: 2px solid #1A1A1A;
+    border-radius: 1.5rem;
+    cursor: pointer;
+
+    padding: 1.8rem 4.5rem;
+
+    font-size: 1.5rem;
 }
