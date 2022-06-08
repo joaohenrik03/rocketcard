@@ -28,3 +28,149 @@ body {
 
     overflow-x: hidden;
 }
+
+h4 {
+    font-weight: 400;
+    font-size: 2rem;
+
+    margin-bottom: 2.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 7rem 0;
+}
+
+.left h4 {
+    text-align: center;
+}
+
+.left .card {
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    border-radius: 5rem;
+
+    padding: 2.4rem 1.6rem;
+
+    width: 43rem;
+}
+
+.left .card__content {
+    background-color: var(--bg);
+    border-radius: 5rem;
+}
+
+.left .header {
+    padding: 3.7rem 3.3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left .header h1 {
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.left .header .header__logo {
+    width: 5.5rem;
+    height: 5.5rem;
+
+    padding: 1.2rem;
+
+    border: 1px solid #F1F1F1;
+    border-radius: 50%;
+}
+
+.left .informations {
+    width: 100%;
+    height: 40rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.left .informations .informations__img {
+    position: absolute;
+    top: 0;
+    right: -18%;
+
+    object-fit: cover;
+}
+
+.left .informations .informations__img img {
+    height: 37rem;
+    width: 37rem;
+
+    border: 10px solid #8257E5;
+    border-radius: 50%;
+}
+
+.left .informations .informations__statistics {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+
+    margin-left: 2rem;
+    padding: 3rem 2rem;
+
+    background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
+    border-radius: 5rem;
+}
+
+
+.left .informations .informations__statistics ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.left .informations .informations__statistics li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-style: normal;
+}
+
+.left .footer {
+    width: 100%;
+
+    padding-top: 3.4rem;
+    padding-bottom: 2.7rem;
+    padding-right: 1.7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.left .footer i {
+    width: 2.8rem;
+    height: 3.4rem;
+}
