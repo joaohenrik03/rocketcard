@@ -69,6 +69,10 @@ img {
     text-align: center;
 }
 
+.left .left__container {
+    width: 43rem;
+}
+
 .left .card {
     position: relative;
     z-index: 2;
@@ -77,7 +81,7 @@ img {
 
     padding: 2.4rem 1.6rem;
 
-    width: 43rem;
+    width: min(100%, 80%);
 }
 
 .left .card__content {
@@ -205,4 +209,26 @@ img {
     padding: 1.8rem 4.5rem;
 
     font-size: 1.5rem;
+}
+
+/* =-=-=-=-=-=-=-=-= Responsive =-=-=-=-=-=-=-=-= */
+
+@media(max-width: 1023px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .left {
+        justify-content: center;
+    }
+
+    .card {
+        margin-inline: auto;
+    }
+
+    .right {
+        height: auto;
+        padding-bottom: 7rem;
+    }
 }
