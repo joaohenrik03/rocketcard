@@ -1,0 +1,30 @@
+:root {
+    --bg: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text);
+
+    background-color: var(--bg);
+
+    overflow-x: hidden;
+}
