@@ -69,10 +69,6 @@ img {
     text-align: center;
 }
 
-.left .left__container {
-    width: 43rem;
-}
-
 .left .card {
     position: relative;
     z-index: 2;
@@ -81,7 +77,7 @@ img {
 
     padding: 2.4rem 1.6rem;
 
-    width: min(100%, 80%);
+    width: 43rem;
 }
 
 .left .card__content {
