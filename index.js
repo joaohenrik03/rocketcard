@@ -16,7 +16,8 @@ function changeBackgroundColor() {
     const r = Math.floor(Math.random() * 255)
     const g = Math.floor(Math.random() * 255)
     const b = Math.floor(Math.random() * 255)
-    console.log(r,g,b)
+
+    document.querySelector('.card').style.background = `rgb(${r}, ${g}, ${b})`
 }
 
 setCardData()
