@@ -69,6 +69,10 @@ img {
     text-align: center;
 }
 
+.left .left__container {
+    width: 43rem;
+}
+
 .left .card {
     position: relative;
     z-index: 2;
@@ -77,7 +81,7 @@ img {
 
     padding: 2.4rem 1.6rem;
 
-    width: 43rem;
+    width: 100%;
 }
 
 .left .card__content {
@@ -226,5 +230,27 @@ img {
     .right {
         height: auto;
         padding-bottom: 7rem;
+    }
+}
+
+@media(max-width: 430px) {
+    .left .left__container {
+        width: 32rem;
+    }
+
+    .left .header {
+        padding: 2rem 2rem;
+    }
+
+    .left .header .header__logo {
+        width: 4rem;
+        height: 4rem;
+
+        padding: 0.8rem;
+    }
+    
+    .left .informations .informations__img img {
+        height: 27rem;
+        width: 27rem;
     }
 }
